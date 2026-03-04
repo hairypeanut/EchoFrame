@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EchoFrame – Disclaimer</title>
+
+  <style>
+    :root{
+      --bg: #F4EFFA;
+      --card: rgba(255,255,255,0.62);
+      --stroke: rgba(86, 60, 120, 0.14);
+      --text: #2A2134;
+      --muted: rgba(42,33,52,0.60);
+      --accent: rgba(86, 60, 120, 0.92);
+      --shadow: 0 18px 40px rgba(0,0,0,0.10);
+      --radius: 22px;
+      --max: 860px;
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Display","SF Pro Text", Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family: var(--font);
+      background: radial-gradient(1000px 700px at 50% 15%, rgba(120,90,160,0.14), transparent 60%),
+                  radial-gradient(900px 600px at 30% 40%, rgba(160,120,200,0.10), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 34px 18px 60px;
+    }
+
+    .top{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding-top: 10px;
+      padding-bottom: 18px;
+    }
+
+    .logo{
+      width: 210px;
+      max-width: 70vw;
+      height:auto;
+      opacity: 0.92;
+      filter: drop-shadow(0 10px 18px rgba(0,0,0,0.08));
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      overflow:hidden;
+    }
+
+    .cardHeader{
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid rgba(86,60,120,0.10);
+      background: linear-gradient(to bottom, rgba(255,255,255,0.65), rgba(255,255,255,0.35));
+    }
+
+    h1{
+      margin:0;
+      font-size: 22px;
+      letter-spacing: 0.2px;
+    }
+
+    .meta{
+      margin-top: 6px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .content{
+      padding: 18px 20px 8px;
+      line-height: 1.65;
+      font-size: 14px;
+      color: rgba(42,33,52,0.88);
+    }
+
+    h2{
+      margin: 18px 0 8px;
+      font-size: 15px;
+      color: rgba(42,33,52,0.92);
+      letter-spacing: 0.2px;
+    }
+
+    p{ margin: 10px 0; }
+
+    ul{
+      margin: 10px 0 10px 18px;
+      padding: 0;
+    }
+    li{ margin: 6px 0; }
+
+    .note{
+      margin: 14px 0 6px;
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: rgba(86,60,120,0.08);
+      border: 1px solid rgba(86,60,120,0.12);
+      color: rgba(42,33,52,0.82);
+      font-size: 13px;
+    }
+
+    .footer{
+      padding: 14px 20px 18px;
+      border-top: 1px solid rgba(86,60,120,0.10);
+      color: var(--muted);
+      font-size: 12px;
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    a{ color: rgba(86,60,120,0.96); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #120F16;
+        --card: rgba(28, 22, 36, 0.68);
+        --stroke: rgba(210, 190, 240, 0.14);
+        --text: rgba(255,255,255,0.92);
+        --muted: rgba(255,255,255,0.60);
+        --accent: rgba(210,190,240,0.92);
+        --shadow: 0 18px 40px rgba(0,0,0,0.40);
+      }
+      body{
+        background: radial-gradient(1000px 700px at 50% 15%, rgba(210,190,240,0.10), transparent 60%),
+                    radial-gradient(900px 600px at 30% 40%, rgba(170,120,220,0.08), transparent 55%),
+                    var(--bg);
+      }
+      .cardHeader{
+        background: linear-gradient(to bottom, rgba(28,22,36,0.72), rgba(28,22,36,0.40));
+      }
+      .note{
+        background: rgba(210,190,240,0.10);
+        border: 1px solid rgba(210,190,240,0.14);
+      }
+      a{ color: rgba(210,190,240,0.95); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="top">
+      <img class="logo" src="logoEchoText2.png" alt="EchoFrame Logo" />
+    </div>
+
+    <div class="card">
+      <div class="cardHeader">
+        <h1>Disclaimer</h1>
+        <div class="meta">Last updated: <strong>March 2026</strong></div>
+      </div>
+
+      <div class="content">
+        <p>
+          EchoFrame is a journaling and reflection tool designed to help you capture thoughts, track patterns,
+          and build self-awareness over time.
+        </p>
+
+        <div class="note">
+          <strong>Not medical advice:</strong> EchoFrame does not provide medical, psychological, or therapeutic advice.
+          Any reflections, insights, or summaries are for informational and self-reflection purposes only.
+        </div>
+
+        <h2>1) No Professional Relationship</h2>
+        <p>
+          Using EchoFrame does not create a doctor–patient, therapist–client, or any other professional relationship.
+          If you need professional support, please contact a qualified professional.
+        </p>
+
+        <h2>2) Emergencies</h2>
+        <p>
+          If you are in immediate danger or experiencing an emergency, contact local emergency services right away.
+          Do not rely on EchoFrame for urgent or crisis support.
+        </p>
+
+        <h2>3) Content Responsibility</h2>
+        <p>
+          You are responsible for the content you enter into EchoFrame. Please avoid entering highly sensitive information
+          you would not want stored or synced.
+        </p>
+
+        <h2>4) Accuracy of Insights</h2>
+        <p>
+          Any pattern insights or summaries may be incomplete or inaccurate. They are intended as a guide for reflection,
+          not as a definitive assessment.
+        </p>
+
+        <h2>5) Subscription Terms (Summary)</h2>
+        <ul>
+          <li>Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.</li>
+          <li>Manage or cancel your subscription in your Apple ID settings.</li>
+          <li>Payment is charged to your Apple ID account at confirmation of purchase.</li>
+        </ul>
+
+        <p>
+          For more information, please read our <a href="privacy.html">Privacy Policy</a>.
+        </p>
+      </div>
+
+      <div class="footer">
+        <div>© EchoFrame</div>
+        <div>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
